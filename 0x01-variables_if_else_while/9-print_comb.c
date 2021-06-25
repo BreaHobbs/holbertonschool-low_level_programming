@@ -7,24 +7,18 @@
 * Return: returns successfully a 0 upon completion
 */
 
-void print_c_string(char *message)
-{
-int i;
-int count = 0;
-while (message[count] != '\0')
-{
-count++;
-}
-
-for (i = 0; i < count; ++i)
-putchar (message[i]);
-
-}
 int main(void)
 {
-
-char *message = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
-print_c_string(message);
+int counter;
+for (counter = 0; counter <= 9; counter++)
+{
+putchar ('0' + counter);
+if (counter < 9)
+{
+putchar (',');
+putchar (' ');
+}
+}
 putchar ('\n');
 return (0);
 }
