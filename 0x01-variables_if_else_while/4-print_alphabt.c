@@ -15,9 +15,7 @@ if (ch == 'e' || ch == 'q')
 continue;
 {
 putchar (ch);
-
 continue;
-
 }
 putchar ('\n');
 return (0);
