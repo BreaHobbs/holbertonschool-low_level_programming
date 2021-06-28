@@ -2,14 +2,12 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
-* int _islower(int c); - function checks for lowercase character
-* 
+* _islower - function checks for lowercase character
+* @c: takes in input into function
 * Return: returns successfully a 0 upon completion
 */
 int _islower(int c)
 {
-	int a;
-
 	if (c >= 'a' && c <= 'z')
 	{
 	return (1);
