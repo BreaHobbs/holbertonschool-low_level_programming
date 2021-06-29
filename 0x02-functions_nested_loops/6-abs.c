@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "holberton.h"
 /**
 * _abs - a function that computes the absolute value of an integer.
@@ -12,5 +10,5 @@ int _abs(int c)
 	{
 	c = (c * -1);
 	}
-	return (0);
+	return (c);
 }
