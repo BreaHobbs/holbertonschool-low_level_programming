@@ -6,7 +6,7 @@
 * @c: takes in input into function
 * Return: returns successfully a 0 upon completion
 */
-int _abs(int)
+int _abs(int c)
 {
 	int c;
 
