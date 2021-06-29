@@ -6,10 +6,12 @@
 * @c: takes in input into function
 * Return: returns successfully a 0 upon completion
 */
-int _abs(c)
+int _abs(int)
 {
+	int c;
+
 	if (c >= 0)
 		_putchar(c);
 	else if (c < 0)
-		_putchar(-c);
+		_putchar(-1 * c);
 }
