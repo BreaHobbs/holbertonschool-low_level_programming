@@ -1,29 +1,26 @@
 #include <string.h>
 #include "holberton.h"
 /**
-* print_last_digit - function checks for lowercase character
-* @x: takes in input into function
+* print_rev - Write a function that prints a string in reverse
+* @s: takes in input into function
 * Return: returns successfully a 0 upon completion
 */
-void print_rev(char *s)
+void print_rev(char *head)
 {
-int length, c;
-   char *begin, *end, temp;
- 
-   length = _strlen(s);
-   begin  = s;
-   end    = s;
- 
-   for (c = 0; c < length - 1; c++)
-      end++;
- 
-   for (c = 0; c < length/2; c++)
-   {        
-      temp   = *end;
-      *end   = *begin;
-      *begin = temp;
- 
-      begin++;
-      end--;
-   }
+	char *tail = head;
+	
+	if (!head) return;
+  
+	while(*tail) ++tail;    // find the 0 terminator, like head+strlen
+
+	--tail;               // tail points to the last real char
+                        // head still points to the first
+  for( ; head < tail; ++head, --tail) {
+      // walk pointers inwards until they meet or cross in the middle
+      char h = *head, t = *tail;
+      *head = t;           // swapping as we go
+      *tail = h;
+
+
+}
 }
