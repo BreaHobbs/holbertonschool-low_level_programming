@@ -1,7 +1,6 @@
 #include <string.h>
 #include "holberton.h"
 /**
-* print_rev - Write a function that prints a string in reverse
 * _strlen - counts the length of a string
 * @p: take more input into function
 * Return: returns successfully a 0 upon completion
@@ -17,6 +16,11 @@ int _strlen(char *p)
 	}
 	return (count);
 }
+/**
+* print_rev - Write a function that prints a string in reverse
+* @s: take more input into function
+* Return: returns successfully a 0 upon completion
+*/
 void print_rev(char *s)
 {
 	int length;
