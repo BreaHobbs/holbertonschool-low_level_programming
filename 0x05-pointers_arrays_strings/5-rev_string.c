@@ -11,7 +11,7 @@ void rev_string(char *str)
 	int j = 0;
 	int temp = 0;
 
-	j = strlen(str) - 1;
+	j = _strlen(str) - 1;
 
 	while (i < j)
 	{
@@ -21,4 +21,21 @@ void rev_string(char *str)
 	i++;
 	j--;
 	}
+}
+
+/**
+* _strlen - counts the length of a string
+* @p: take more input into function
+* Return: returns the count
+*/
+int _strlen(char *p)
+{
+        unsigned int count = 0;
+
+        while (*p != '\0')
+        {
+                count++;
+                p++;
+        }
+        return (count);
 }
