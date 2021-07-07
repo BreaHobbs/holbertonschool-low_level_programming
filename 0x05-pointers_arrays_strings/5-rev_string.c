@@ -30,12 +30,12 @@ void rev_string(char *str)
 */
 int _strlen(char *p)
 {
-        unsigned int count = 0;
+	unsigned int count = 0;
 
-        while (*p != '\0')
-        {
-                count++;
-                p++;
-        }
-        return (count);
+	while (*p != '\0')
+	{
+		count++;
+		p++;
+	}
+	return (count);
 }
