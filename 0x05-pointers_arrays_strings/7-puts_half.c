@@ -11,9 +11,9 @@ void puts_half(char *str)
 
 	int counter;
 	
-	int length_of_the_string = _strlen(str); //gets length of string//
+	int length_of_the_string = _strlen(str);
 
-	if (length_of_the_string % 2 == 0) //is even//
+	if (length_of_the_string % 2 == 0)
 	{	
 		n = (length_of_the_string / 2);
 		for (counter = n; counter < length_of_the_string; counter++)
@@ -24,7 +24,7 @@ void puts_half(char *str)
 		}	
 		
 	}
-	else if (length_of_the_string - 1 / 2 != 0) //is odd//
+	else if (length_of_the_string - 1 / 2 != 0)
 	{
 		n = (length_of_the_string -1 / 2);
 		for (counter = n; counter < length_of_the_string; counter++)
