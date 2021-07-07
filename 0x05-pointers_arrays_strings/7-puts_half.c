@@ -10,26 +10,23 @@ void puts_half(char *str)
 	int n;
 
 	int counter;
-	
+
 	int length_of_the_string = _strlen(str);
 
 	if (length_of_the_string % 2 == 0)
-	{	
+	{
 		n = (length_of_the_string / 2);
 		for (counter = n; counter < length_of_the_string; counter++)
 		{
-			
 			_putchar(str[counter]);
-			
-		}	
-		
+		}
 	}
 	else if (length_of_the_string % 2 != 0)
 	{
 		n = (length_of_the_string + 1) / 2;
 		for (counter = n; counter < length_of_the_string; counter++)
-			_putchar(str[counter]);	
-	}	
+			_putchar(str[counter]);
+	}
 		_putchar('\n');
 }
 
@@ -40,12 +37,12 @@ void puts_half(char *str)
 */
 int _strlen(char *p)
 {
-        unsigned int count = 0;
+	unsigned int count = 0;
 
-        while (*p != '\0')
-        {
-                count++;
-                p++;
-        }
-        return (count);
+	while (*p != '\0')
+	{
+		count++;
+		p++;
+	}
+	return (count);
 }
