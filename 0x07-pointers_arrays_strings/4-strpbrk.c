@@ -12,22 +12,22 @@
 char *_strpbrk(char *s, char *accept)
 {
 /*return null if any one is NULL*/
-		if ((s == NULL) || (accept == NULL))
-			return (NULL);
-			while (*s)
-			{
+	if ((s == NULL) || (accept == NULL))
+		return (NULL);
+		while (*s)
+		{
 			/*return s1 char position if found in s2*/
 			/*if not found return NULL*/
 			if (strchr(accept, *s))
 			{
-			/*return from function*/
-			/*if char found in s*/
-			return (s);
+				/*return from function*/
+				/*if char found in s*/
+				return (s);
 			}
 			else
 			{
-			s++;
+				s++;
 			}
-			}
-			return (NULL);
+		}
+		return (NULL);
 }
