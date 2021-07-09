@@ -5,20 +5,22 @@
 #include <stddef.h>
 
 /**
- * *_strcat - concatenates two strings
+ * *_strncpy - a function that copies a string.
  * @dest: a string
  * @src: a string
- *
+ * @n: a variable
  * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
 	/* return if no memory is allocated to the destination*/
 	char *ptr;
+
 	ptr = 0;
-	if (dest == NULL) 
+
+	if (dest == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	/* take a pointer pointing to the beginning of the destination string*/
@@ -33,14 +35,16 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 	}
 while (n > 0)
-        {   
-        *dest = '\0';
-        dest++;
-        n--;
-        } 
-	/* null terminate destination string*/
-	/*dest = '\0';*/
+{
+	*dest = '\0';
+	dest++;
+	n--;
+}
 
-	/* the destination is returned by standard `strncpy()`*/
-	return ptr;
+/* null terminate destination string*/
+
+/*dest = '\0';*/
+
+/* the destination is returned by standard `strncpy()`*/
+	return (ptr);
 }
