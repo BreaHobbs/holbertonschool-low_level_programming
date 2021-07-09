@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * *_strcat - concatenates two strings
+ * *_memcpy - Write a function that copies memory area.
  * @dest: a string
  * @src: a string
- *
+ * @n - variable takes in input
  * Return: dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
