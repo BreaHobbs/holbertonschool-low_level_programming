@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * seperator_comp - checks input for seperator character
+ * is_separator - checks input for seperator character
  * @n: value
  *
  * Return: whether it is or not
@@ -44,7 +44,6 @@ char *cap_string(char *str)
 			/*check next character is lowercase alphabet*/
 			if (is_separator(str[i]) == 1)
 				i++;
-			
 			if (str[i] >= 'a' && str[i] <= 'z')
 			{
 				str[i] = str[i] - 32; /*subtract 32 to make it capital*/
