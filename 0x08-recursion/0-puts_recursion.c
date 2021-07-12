@@ -19,4 +19,5 @@ void _puts_recursion(char *s)
     if(_putchar('\n') == EOF)
         ;
 
+return;
 }
