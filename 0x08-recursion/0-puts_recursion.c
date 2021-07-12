@@ -10,14 +10,5 @@
 
 void _puts_recursion(char *s)
 {
-    while(*s)
-    {
-        if(_putchar(*s++) == EOF)
-            return;
-    }
-
-    if(_putchar('\n') == EOF)
-        return;
-
 return;
 }
