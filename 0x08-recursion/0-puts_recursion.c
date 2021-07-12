@@ -1,23 +1,22 @@
 #include <stdio.h>
+#include "holberton.h"
 /**
- * *puts - concatenates two strings
+ * *_puts_recursion - concatenates two strings
  * @s: a string
  *
  * Return: 0
  */
 
 
-
-int puts(const char *s)
+void _puts_recursion(char *s)
 {
     while(*s)
     {
-        if(putchar(*s++) == EOF)
-            return EOF;
+        if(_putchar(*s++) == EOF)
+            ;
     }
 
-    if(putchar('\n') == EOF)
-        return EOF;
+    if(_putchar('\n') == EOF)
+        ;
 
-    return 0;
 }
