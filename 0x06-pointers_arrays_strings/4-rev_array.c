@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * *_strcat - concatenates two strings
- * @dest: a string
- * @src: a string
+ * reverse_array - function reversed an array
+ * @a: an array
+ * @n: a string
  *
  * Return: dest
  */
@@ -13,7 +13,8 @@ void reverse_array(int *a, int n)
 {
 
 	int *first = a, *last = a + n - 1;
-	while(first < last) 
+
+	while (first < last)
 	{
 		swap_int(first, last);
 		first++;
