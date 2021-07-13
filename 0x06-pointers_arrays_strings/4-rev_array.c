@@ -23,6 +23,13 @@ void reverse_array(int *a, int n)
 
 }
 
+/**
+ * swap_int - swaps integer values
+ * @a: an array
+ * @b: a string
+ *
+ * Return: dest
+ */
 void swap_int(int *a, int *b)
 {
 	int a_hold, b_hold;
